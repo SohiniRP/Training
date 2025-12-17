@@ -52,6 +52,18 @@ public class Main {
         cow.drinks();
         cow.hunts();
         cow.eats();
+
+        //Assignment2
+        PersonAssignment2 person1 = new PersonAssignment2("A", 10, "Pune");
+        PersonAssignment2 person2 = new PersonAssignment2("B", 20, "Pune");
+        PersonAssignment2 person3 = new PersonAssignment2("C", 30, "Pune");
+        PersonAssignment2 person4 = new PersonAssignment2("D", 40, "Pune");
+        PersonAssignment2 person5 = new PersonAssignment2("E", 50, "Pune");
+
+        System.out.println("Count = " + PersonAssignment2.getCount());
+
+//        EmpAssignment2 emp = new EmpAssignment2();
+//        emp.noOverride(" 5");
     }
 
     public static void method(int i){
