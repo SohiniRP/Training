@@ -39,6 +39,19 @@ public class Main {
         method(2.5f);
 
         method("Sohini");
+
+        //Assignment 1
+        AnimalAssignment1 lion = new LionAssignment1("Has a huge mane");
+        lion.sleep();
+        lion.drinks();
+        lion.hunts();
+        lion.eats();
+
+        AnimalAssignment1 cow = new CowAssignment1("Cow gives milk");
+        cow.sleep();
+        cow.drinks();
+        cow.hunts();
+        cow.eats();
     }
 
     public static void method(int i){
