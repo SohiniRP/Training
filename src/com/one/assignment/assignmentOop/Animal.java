@@ -1,7 +1,7 @@
 package com.one.assignment.assignmentOop;
 
 public abstract class Animal {
-    public String description;
+    private String description;
 
     public Animal(String description){
         this.description = description;
