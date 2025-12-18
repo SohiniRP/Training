@@ -1,9 +1,9 @@
-package Assignment1;
+package com.one.assignment.assignmentOop;
 
-public abstract class AnimalAssignment1 {
+public abstract class Animal {
     public String description;
 
-    public AnimalAssignment1(String description){
+    public Animal(String description){
         this.description = description;
     }
 

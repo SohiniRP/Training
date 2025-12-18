@@ -1,4 +1,4 @@
-package OOPs;
+package com.one.oop.abstraction;
 
 public class Car extends Vehicle {
     public void brake(){

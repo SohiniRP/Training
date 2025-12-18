@@ -1,27 +1,27 @@
-package Assignment2;
+package com.one.assignment.assignmentAbstract;
 
-public class PersonAssignment2 {
+public class Person {
     public static int count;
 
     private String name;
     private int age;
     private String address;
 
-    public PersonAssignment2(String name, int age, String address){
+    public Person(String name, int age, String address){
         this.name = name;
         this.age = age;
         this.address = address;
         count++;
     }
 
-    public PersonAssignment2(){};
+    public Person(){};
 
     public static int getCount() {
         return count;
     }
 
     public static void setCount(int count) {
-        PersonAssignment2.count = count;
+        Person.count = count;
     }
 
     public String getName() {

@@ -1,4 +1,4 @@
-package OOPs;
+package com.one.oop.inheritance;
 
 public class Parent {
 

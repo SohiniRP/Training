@@ -1,4 +1,4 @@
-package OOPs;
+package com.one.oop.encapsulation;
 
 public class Employee {
 

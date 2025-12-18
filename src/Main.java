@@ -1,8 +1,12 @@
-import Assignment1.AnimalAssignment1;
-import Assignment1.CowAssignment1;
-import Assignment1.LionAssignment1;
-import Assignment2.PersonAssignment2;
-import OOPs.*;
+import com.one.assignment.assignmentOop.Animal;
+import com.one.assignment.assignmentOop.Cow;
+import com.one.assignment.assignmentOop.Lion;
+import com.one.assignment.assignmentAbstract.Person;
+import com.one.oop.abstraction.Car;
+import com.one.oop.abstraction.Vehicle;
+import com.one.oop.encapsulation.*;
+import com.one.oop.inheritance.Child;
+import com.one.oop.inheritance.Parent;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,26 +51,26 @@ public class Main {
         method("Sohini");
 
         //Assignment 1
-        AnimalAssignment1 lion = new LionAssignment1("Has a huge mane");
+        Animal lion = new Lion("Has a huge mane");
         lion.sleep();
         lion.drinks();
         lion.hunts();
         lion.eats();
 
-        AnimalAssignment1 cow = new CowAssignment1("Cow gives milk");
+        Animal cow = new Cow("Cow gives milk");
         cow.sleep();
         cow.drinks();
         cow.hunts();
         cow.eats();
 
-        //Assignment2
-        PersonAssignment2 person1 = new PersonAssignment2("A", 10, "Pune");
-        PersonAssignment2 person2 = new PersonAssignment2("B", 20, "Pune");
-        PersonAssignment2 person3 = new PersonAssignment2("C", 30, "Pune");
-        PersonAssignment2 person4 = new PersonAssignment2("D", 40, "Pune");
-        PersonAssignment2 person5 = new PersonAssignment2("E", 50, "Pune");
+        //com.one.assignment.Assignment2
+        Person person1 = new Person("A", 10, "Pune");
+        Person person2 = new Person("B", 20, "Pune");
+        Person person3 = new Person("C", 30, "Pune");
+        Person person4 = new Person("D", 40, "Pune");
+        Person person5 = new Person("E", 50, "Pune");
 
-        System.out.println("Count = " + PersonAssignment2.getCount());
+        System.out.println("Count = " + Person.getCount());
 
 //        EmpAssignment2 emp = new EmpAssignment2();
 //        emp.noOverride(" 5");
