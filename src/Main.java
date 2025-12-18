@@ -70,7 +70,7 @@ public class Main {
         Person person4 = new Person("D", 40, "Pune");
         Person person5 = new Person("E", 50, "Pune");
 
-        System.out.println("Count = " + Person.getCount());
+        Person.printCount();
 
 //        EmpAssignment2 emp = new EmpAssignment2();
 //        emp.noOverride(" 5");

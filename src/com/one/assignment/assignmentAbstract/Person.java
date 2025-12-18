@@ -16,14 +16,6 @@ public class Person {
 
     public Person(){};
 
-    public static int getCount() {
-        return count;
-    }
-
-    public static void setCount(int count) {
-        Person.count = count;
-    }
-
     public String getName() {
         return name;
     }
@@ -50,5 +42,9 @@ public class Person {
 
     public final void noOverride(String s){
         System.out.println("Cannot override" + s);
+    }
+
+    public static void printCount(){
+        System.out.println(count);
     }
 }
