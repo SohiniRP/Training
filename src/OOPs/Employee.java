@@ -1,3 +1,5 @@
+package OOPs;
+
 public class Employee {
 
     private String name;
@@ -27,7 +29,7 @@ public class Employee {
     }
 
     public void displayDetails(){
-        System.out.println("Employee: " + name);
+        System.out.println("OOPs.Employee: " + name);
         System.out.println("Salary: " + salary);
     }
 }

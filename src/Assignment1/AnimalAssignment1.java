@@ -1,3 +1,5 @@
+package Assignment1;
+
 public abstract class AnimalAssignment1 {
     public String description;
 

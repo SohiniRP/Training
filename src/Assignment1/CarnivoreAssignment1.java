@@ -1,4 +1,6 @@
-public abstract class CarnivoreAssignment1 extends AnimalAssignment1{
+package Assignment1;
+
+public abstract class CarnivoreAssignment1 extends AnimalAssignment1 {
     public CarnivoreAssignment1(String description) {
         super(description);
     }

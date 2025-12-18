@@ -1,3 +1,9 @@
+import Assignment1.AnimalAssignment1;
+import Assignment1.CowAssignment1;
+import Assignment1.LionAssignment1;
+import Assignment2.PersonAssignment2;
+import OOPs.*;
+
 public class Main {
     public static void main(String[] args) {
         // Object Example
@@ -15,7 +21,7 @@ public class Main {
         newEmp.setName("Akash");
         newEmp.setSalary(2000);
 
-        System.out.println("Employee "+ newEmp.getName() + " has salary "+ newEmp.getSalary());
+        System.out.println("OOPs.Employee "+ newEmp.getName() + " has salary "+ newEmp.getSalary());
 
         //Polymorphism
         Parent p = new Parent();

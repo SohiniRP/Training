@@ -1,4 +1,6 @@
-public class LionAssignment1 extends CarnivoreAssignment1{
+package Assignment1;
+
+public class LionAssignment1 extends CarnivoreAssignment1 {
     public LionAssignment1(String description){
         super(description);
     }
