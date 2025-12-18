@@ -1,5 +1,7 @@
 package com.one.string;
 
+import java.util.Arrays;
+
 public class StringsPractice {
 
     public static void main(String[] args) {
@@ -37,12 +39,33 @@ public class StringsPractice {
             System.out.println(a);
         }
             //2. split() With limit Parameter
-
+        spl = regexString.split("//", 2);
+        System.out.println("result when limit is 2 = " + Arrays.toString(spl));
+            //3. split() at the + character
+        String vowels = "a+e+f";
+        String[] result = vowels.split("\\+");
+        System.out.println("result = " + Arrays.toString(result));
         //2. indent()
+        String indentS = "Hello\nWorld";
+        System.out.println(indentS.indent(4));
         //3. transform()
+        String s3 = "java";
+
+        String res = s3.transform(str -> str.toUpperCase());
+        System.out.println(res);
         //4. repeat()
+        String s4 = "Hi ";
+
+        System.out.println(s.repeat(3));
         //5. strip()
+        String s5 = "   Hello   ";
+
+        System.out.println(s5.strip());
         //6. isBlank()
+        System.out.println("   ".isBlank());
         //7. lines()
+        String s7 = "Java\nPython\nC++";
+
+        s7.lines().forEach(System.out::println);
     }
 }
