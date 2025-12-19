@@ -1,0 +1,16 @@
+1. Analyze and identify use-case scenarios for different collection implementations.
+
+2.How to create unmodifiable/Immutable list?
+
+3.
+
+4. "Map<Employee, Integer> map = new HashMap<>();
+   In Employee class, hashcode() method is overridden and it returns 1 as hashcode every time.
+   Public int hashcode()
+   {
+         return 1;
+   }
+
+   If we are adding 5 unique employee objects:
+   1. What is the size of the HashMap?
+   2. How elements will be stored internally in the memory."
