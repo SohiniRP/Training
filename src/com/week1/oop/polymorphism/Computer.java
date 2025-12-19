@@ -1,4 +1,4 @@
-package com.one.oop.polymorphism;
+package com.week1.oop.polymorphism;
 
 public class Computer {
     private String cpu;

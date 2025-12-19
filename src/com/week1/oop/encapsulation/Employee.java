@@ -1,4 +1,4 @@
-package com.one.oop.encapsulation;
+package com.week1.oop.encapsulation;
 
 public class Employee {
 

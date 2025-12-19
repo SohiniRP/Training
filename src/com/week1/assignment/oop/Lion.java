@@ -1,4 +1,4 @@
-package com.one.assignment.assignmentOop;
+package com.week1.assignment.oop;
 
 public class Lion extends Carnivore {
     public Lion(String description){

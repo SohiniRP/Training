@@ -1,4 +1,4 @@
-package com.one.assignment.assignmentString;
+package com.week1.assignment.string;
 
 public class StringAssignment {
     public static void main(String[] args) {

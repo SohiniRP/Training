@@ -1,4 +1,4 @@
-package com.one.oop.abstraction;
+package com.week1.oop.abstraction;
 
 public abstract class Vehicle {
 

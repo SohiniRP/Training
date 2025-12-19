@@ -1,4 +1,4 @@
-package com.one.string;
+package com.week1.string;
 
 import java.util.Arrays;
 
@@ -7,22 +7,22 @@ public class StringsPractice {
     public static void main(String[] args) {
         //ways of creating Strings
         //1. String Literal
-        String s = "Sohini";
-        System.out.println(s);
+        String name = "Sohini";
+        System.out.println(name);
         //2. New Keyword
-        String newS = new String("Sohini");
-        System.out.println(newS);
-        System.out.println(s==newS);
-        System.out.println(s.equals(newS));
-        System.out.println(newS.intern()==s);
+        String newName = new String("Sohini");
+        System.out.println(newName);
+        System.out.println(name==newName);
+        System.out.println(name.equals(newName));
+        System.out.println(newName.intern()==name);
         //3. StringBuilder
         StringBuilder sb = new StringBuilder("SohiniPaul");
         System.out.println(sb.append(1));
         System.out.println(sb.reverse());
         //4. StringBuffer
-        StringBuffer sBuff = new StringBuffer("SP");
-        System.out.println(sBuff.append("aul"));
-        System.out.println(sBuff.replace(0,1, "Sohini"));
+        StringBuffer bufferString = new StringBuffer("SP");
+        System.out.println(bufferString.append("aul"));
+        System.out.println(bufferString.replace(0,1, "Sohini"));
 
         //String methods
         //1. split()
@@ -47,16 +47,16 @@ public class StringsPractice {
         System.out.println("result = " + Arrays.toString(result));
         //2. indent()
         String indentS = "Hello\nWorld";
-        System.out.println(indentS.indent(4));
+//        System.out.println(indentS.indent(4));
         //3. transform()
         String s3 = "java";
 
-        String res = s3.transform(str -> str.toUpperCase());
-        System.out.println(res);
+//        String res = s3.transform(str -> str.toUpperCase());
+//        System.out.println(res);
         //4. repeat()
         String s4 = "Hi ";
 
-        System.out.println(s.repeat(3));
+        System.out.println(s4.repeat(3));
         //5. strip()
         String s5 = "   Hello   ";
 

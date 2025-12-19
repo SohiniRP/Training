@@ -1,12 +1,12 @@
-import com.one.assignment.assignmentOop.Animal;
-import com.one.assignment.assignmentOop.Cow;
-import com.one.assignment.assignmentOop.Lion;
-import com.one.assignment.assignmentAbstract.Person;
-import com.one.oop.abstraction.Car;
-import com.one.oop.abstraction.Vehicle;
-import com.one.oop.encapsulation.*;
-import com.one.oop.inheritance.Child;
-import com.one.oop.inheritance.Parent;
+import com.week1.assignment.oop.Animal;
+import com.week1.assignment.oop.Cow;
+import com.week1.assignment.oop.Lion;
+import com.week1.assignment.abstractinterface.Person;
+import com.week1.oop.abstraction.Car;
+import com.week1.oop.abstraction.Vehicle;
+import com.week1.oop.encapsulation.*;
+import com.week1.oop.inheritance.Child;
+import com.week1.oop.inheritance.Parent;
 
 public class Main {
     public static void main(String[] args) {

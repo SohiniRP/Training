@@ -1,4 +1,4 @@
-package com.one.assignment.assignmentAbstract;
+package com.week1.assignment.abstractinterface;
 
 public class Person {
     public static int count;

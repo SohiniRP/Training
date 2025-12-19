@@ -1,4 +1,4 @@
-package com.one.oop.inheritance;
+package com.week1.oop.inheritance;
 
 public class Parent {
 
