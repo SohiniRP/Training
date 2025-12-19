@@ -1,8 +1,16 @@
 1. Analyze and identify use-case scenarios for different collection implementations.
 
-2.How to create unmodifiable/Immutable list?
-
-3.
+   ArrayList: 1. Used for fast random access
+              2. Used when frequent reads happen from a list and infrequent insert/delete in the middle
+   LinkedList: 1. used when frequent insertions/deletions are required in the middle
+               2. Less random access
+   HashMap: 1. Used for fast lookups
+            2. Used when no order is specified
+   LinkedHashMap: 1. Used when insertion/access order has to be maintained
+   TreeMap: 1. Used when sorted keys are required
+   HashSet:	1. Used when there are no duplicates, no ordering and fast operations are required
+   LinkedHashSet: 1. Insertion order is maintained
+   TreeSet: 1. Used when sorted data is required
 
 4. "Map<Employee, Integer> map = new HashMap<>();
    In Employee class, hashcode() method is overridden and it returns 1 as hashcode every time.
@@ -14,3 +22,8 @@
    If we are adding 5 unique employee objects:
    1. What is the size of the HashMap?
    2. How elements will be stored internally in the memory."
+
+   1. Size = 5:
+      Assuming equals() is correctly implemented, if all Employee objects are unique, then hash collisions do not affect size.
+
+   2. All keys map to the same bucket, hence all 5 entries go into one bucket. It will be stored as LinkedList as number of entries<8.
