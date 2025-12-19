@@ -9,11 +9,11 @@ public class Linkedhashset {
         //1. Adding Elements in LinkedHashSet
         linkedSet.add("Adding");
         linkedSet.add("Elements");
-        linkedSet.add("Hashset");
+        linkedSet.add("LinkedHashset");
 
         //2. Removing Elements in HashSet
-        linkedSet.remove("Hashset");
-        linkedSet.add("in Hashset");
+        linkedSet.remove("LinkedHashset");
+        linkedSet.add("in LinkedHashset");
 
         //3. Iterating through the HashSet
         for (String element : linkedSet)

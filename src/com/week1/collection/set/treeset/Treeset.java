@@ -10,11 +10,11 @@ public class Treeset {
         //1. Adding Elements in LinkedHashSet
         treeSet.add("Adding");
         treeSet.add("Elements");
-        treeSet.add("Hashset");
+        treeSet.add("Treeset");
 
         //2. Removing Elements in HashSet
-        treeSet.remove("Hashset");
-        treeSet.add("in Hashset");
+        treeSet.remove("Treeset");
+        treeSet.add("in Treeset");
 
         //3. Iterating through the HashSet
         for (String element : treeSet)
