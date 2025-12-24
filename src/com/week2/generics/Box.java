@@ -1,6 +1,6 @@
 package com.week2.generics;
 
-public class Box<T> {
+public class Box<T extends Number> {
     private T value;
     private int volume;
 
