@@ -1,6 +1,7 @@
 package com.week2.javafeatures;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Java8Practice{
 
@@ -34,7 +35,22 @@ public class Java8Practice{
         setTree.add(9);
         setTree.add(45);
         System.out.println(setTree);
+
+
+        List<Product> product = List.of(new Product("Bingo", "Chips", 5),
+                new Product("ParleG", "Biscuits", 6),
+                new Product("Dove", "Shampoo", 2),
+                new Product("LifeBouy", "Soap", 4),
+                new Product("Bhujiya", "Namkeen", 1),
+                new Product("Amul Dark", "Chocolate", 3),
+                new Product("Dairy Milk", "Chocolate", 10),
+                new Product("Clinic Plus", "Shampoo", 7),
+                new Product("Loreal", "Shampoo", 5),
+                new Product("Dettol", "Soap", 6));
+
+        Map<String, List<Product>> map = product.stream()
+                .collect(Collectors.groupingBy(Product::getCategory));
+
+        System.out.println(map);
     }
-
-
 }
