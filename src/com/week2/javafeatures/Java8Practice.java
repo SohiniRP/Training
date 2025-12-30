@@ -1,5 +1,6 @@
 package com.week2.javafeatures;
 
+import java.net.CookieHandler;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -52,5 +53,30 @@ public class Java8Practice{
                 .collect(Collectors.groupingBy(Product::getCategory));
 
         System.out.println(map);
+
+        //counting
+        Map<String, Long> count = product.stream()
+                .collect(Collectors.groupingBy(Product::getCategory, Collectors.counting()));
+
+        System.out.println(count);
+
+        //Summing
+        Map<String, Integer> totalQty = product.stream()
+                .collect(Collectors.groupingBy(Product::getCategory, Collectors.summingInt(Product::getQuantity)));
+
+        System.out.println(totalQty);
+
+        //Average
+        Map<String, Double> averageQty = product.stream()
+                .collect(Collectors.groupingBy(Product::getName, Collectors.averagingDouble(Product::getQuantity)));
+
+        System.out.println(averageQty);
+
+        //Changing Collection
+        Map<String, Set<String>> categoryList = product.stream()
+                .collect(Collectors.groupingBy(Product::getCategory,
+                        Collectors.mapping(Product::getName, Collectors.toSet())));
+
+        System.out.println(categoryList);
     }
 }
