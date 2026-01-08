@@ -25,5 +25,10 @@ public class Main {
         list.printList(list.head);
 
         System.out.println("Length: " + list.length());
+
+        list.insert(1,1);
+
+        System.out.println(list.search(1));
+        System.out.println(list.searchPosition(0));
     }
 }

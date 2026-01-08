@@ -121,5 +121,31 @@ public class SinglyLinkedList {
         return count;
     }
 
+    //Searching in LinkedList
+    public boolean search(int key){
+        Node temp = head;
+        while(temp!=null){
+            if(temp.data==key){
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
+
+    //Search and return position
+    public int searchPosition(int key){
+        int position =1;
+        Node temp = head;
+        while(temp!=null){
+            if(temp.data==key){
+                return position;
+            }
+            position++;
+            temp = temp.next;
+        }
+        return -1;
+    }
+
 
 }
