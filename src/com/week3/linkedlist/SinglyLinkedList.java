@@ -21,6 +21,7 @@ public class SinglyLinkedList {
 
     //Insert at the End
     public Node insertAtEnd(int data){
+        if(head==null) return null;
         Node newNode = new Node(data);
         Node temp = head;
         while(temp.next!=null){
@@ -35,14 +36,90 @@ public class SinglyLinkedList {
         Node newNode = new Node(data);
         Node temp =head;
 
-        for(int i=0;i<=position-1;i++){
+        if (position == 1) {
+            insertAtStart(data);
+            return head;
+        }
+
+        for(int i=0;i<=position-1 && temp!=null;i++){
              temp = temp.next;
 
         }
+
+        if (temp == null) {
+            System.out.println("Position out of range");
+            return null;
+        }
+
         newNode.next = temp.next;
         temp.next = newNode;
         return head;
     }
 
-    //
+    //delete from the beginning
+    public void deleteFirst(){
+        if(head==null) {
+            System.out.println("Empty List");
+            return;
+        }
+        head = head.next;
+    }
+
+    //delete from the end
+    public void deleteEnd(){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
+
+    //delete by value
+    public void deleteByValue(int key){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if (head.data == key) {
+            head = head.next;
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next != null && temp.next.data != key) {
+            temp = temp.next;
+        }
+
+        if (temp.next == null) {
+            System.out.println("Value not found");
+            return;
+        }
+
+        temp.next = temp.next.next;
+    }
+
+    // length of linkedList
+    public int length() {
+        int count = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+
 }
