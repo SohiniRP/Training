@@ -8,21 +8,9 @@ public class StackImpl<E> {
     private ArrayList<E> customStack;
     private static final int DEFAULT_SIZE = 10;
     int top =-1;
-    int capacity=0;
 
     public StackImpl() {
-        capacity = DEFAULT_SIZE;
-        this.customStack = new ArrayList<>(DEFAULT_SIZE);
-    }
-
-    public StackImpl(int size) {
-        capacity = size;
-        this.customStack = new ArrayList<>(size);
-    }
-
-    public boolean isFull(){
-        if(top==capacity-1) return true;
-        return false;
+        this.customStack = new ArrayList<>();
     }
 
     public boolean isEmpty(){
@@ -31,9 +19,6 @@ public class StackImpl<E> {
     }
 
     public boolean push(E element){
-        if(isFull()){
-            throw new StackException("Stack is full");
-        }
         top++;
         customStack.add(element);
         return true;
