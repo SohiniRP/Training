@@ -11,7 +11,7 @@ public class Sorting {
 //        insertionSort(newArr);
 //        selectionSort(newArr);
 //        System.out.println(Arrays.toString(newArr));
-        System.out.println(mergeSort(newArr));
+        System.out.println(Arrays.toString(mergeSort(newArr)));
     }
 
     public static void bubbleSort(int[] arr) {
@@ -96,7 +96,7 @@ public class Sorting {
         }
 
         while(j<arr2.length){
-            finalArr[k] = arr1[j];
+            finalArr[k] = arr2[j];
             j++; k++;
         }
 
