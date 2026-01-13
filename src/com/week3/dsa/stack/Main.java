@@ -2,7 +2,7 @@ package com.week3.dsa.stack;
 
 public class Main {
     public static void main(String[] args) throws StackException{
-        StackImpl<Integer> stack = new StackImpl<>(8);
+        StackImpl<Integer> stack = new StackImpl<>();
 
 
         stack.push(7);
