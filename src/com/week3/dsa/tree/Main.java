@@ -20,6 +20,8 @@ public class Main {
         tree.postOrderTraversal(tree.root);
         System.out.println();
         tree.preOrderTraversal(tree.root);
+        System.out.println();
+        tree.levelOrderTraversal(tree.root);
 
 
     }

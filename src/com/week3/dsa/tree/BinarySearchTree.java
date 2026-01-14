@@ -1,5 +1,8 @@
 package com.week3.dsa.tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinarySearchTree {
 
     public BinarySearchTree() {}
@@ -58,5 +61,26 @@ public class BinarySearchTree {
             search(root, data);
         }
         return found;
+    }
+
+    public void levelOrderTraversal(Node node){
+        Queue<Node> q = new LinkedList<>();
+        if(node!=null){
+            q.add(node);
+        }
+        while(!q.isEmpty()){
+            Node current = q.poll();
+            System.out.println(current.data + " ");
+
+            if(current.left!=null){
+//                levelOrderTraversal(current.left);
+                q.add(current.left);
+            }
+
+            if(current.right!=null){
+//                levelOrderTraversal(current.right);
+                q.add(current.right);
+            }
+        }
     }
 }
